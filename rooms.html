@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Rooms - Grand Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f8f9fa; }
+        .page-header { background-color: #495057; color: white; padding: 80px 0; text-align: center; }
+        .room-listing-card { display: flex; flex-wrap: wrap; margin-bottom: 30px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .room-listing-card img { width: 100%; max-width: 300px; object-fit: cover; }
+        .room-listing-card .card-content { padding: 25px; flex: 1; }
+        .amenities-list { list-style: none; padding: 0; }
+        .amenities-list li { margin-right: 15px; display: inline-block; color: #555; }
+        .price { font-size: 1.5em; font-weight: bold; color: #007bff; }
+        .footer { background-color: #343a40; color: white; padding: 40px 0; }
+        @media (max-width: 768px) {
+            .room-listing-card img { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Grand Hotel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="rooms.html">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Our Rooms & Suites</h1>
+            <p class="lead">Choose the best room that fits your needs.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="room-listing-card">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2070&auto=format&fit=crop" alt="Deluxe Room">
+            <div class="card-content w-100">
+                <h3>Deluxe Room</h3>
+                <p>A beautiful and modern room, suitable for both business travelers and tourists. It features a comfortable bed and all essential amenities.</p>
+                <ul class="amenities-list">
+                    <li><i class="fas fa-wifi"></i> WiFi</li>
+                    <li><i class="fas fa-tv"></i> TV</li>
+                    <li><i class="fas fa-snowflake"></i> AC</li>
+                    <li><i class="fas fa-shower"></i> Shower</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <span class="price">₹3,000 / night</span>
+                    <a href="booking.html" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="room-listing-card">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop" alt="Suite Room">
+            <div class="card-content w-100">
+                <h3>Executive Suite</h3>
+                <p>Complete with extra space and luxurious amenities. It includes a separate living area and a large bathroom.</p>
+                <ul class="amenities-list">
+                    <li><i class="fas fa-wifi"></i> WiFi</li>
+                    <li><i class="fas fa-tv"></i> TV</li>
+                    <li><i class="fas fa-snowflake"></i> AC</li>
+                    <li><i class="fas fa-bath"></i> Bathtub</li>
+                    <li><i class="fas fa-coffee"></i> Mini Bar</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <span class="price">₹5,500 / night</span>
+                    <a href="booking.html" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="room-listing-card">
+            <img src="https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Family Room">
+            <div class="card-content w-100">
+                <h3>Family Room</h3>
+                <p>A spacious room designed for the entire family. It includes multiple beds and ample space for children.</p>
+                <ul class="amenities-list">
+                    <li><i class="fas fa-wifi"></i> WiFi</li>
+                    <li><i class="fas fa-tv"></i> TV</li>
+                    <li><i class="fas fa-snowflake"></i> AC</li>
+                    <li><i class="fas fa-users"></i> Extra Space</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <span class="price">₹4,500 / night</span>
+                    <a href="booking.html" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer text-center mt-5">
+        <p>&copy; 2025 Grand Hotel. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
